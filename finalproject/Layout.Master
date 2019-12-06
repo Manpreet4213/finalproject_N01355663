@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="finalproject.Layout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Block</title>
+    <link rel="stylesheet" type="text/css" href="/Content/style.css" />
+</head>
+<body>
+    <header>
+        <div class="cwidth">
+            <nav>
+                <ul>
+                    <li><a href="ShowPage.aspx?Pageid=1">Page1</a></li>
+                    <li><a href="ShowPage.aspx?Pageid=2">Page2</a></li>
+                    <li><a href="ShowPage.aspx?Pageid=3">Page3</a></li>
+                    <li><a href="ShowPage.aspx?Pageid=4">Page4</a></li>
+                    <li><a href="ShowPage.aspx?Pageid=5">Page5</a></li>
+                    <li><a href="ShowPage.aspx?Pageid=6">Page6</a></li>
+                    <li><a href="ShowPage.aspx?Pageid=7">Page7</a></li>
+                    <li><a href="ShowPage.aspx?Pageid=8">Page8</a></li>
+                    <li><a href="ShowPage.aspx?Pageid=9">Page9</a></li>
+                    <li><a href="ShowPage.aspx?Pageid=10">Page10</a></li>
+                    <li><a href="ShowPage.aspx?Pageid=11">Page11</a></li>
+                    <li><a href="ShowPage.aspx"?Pageid="12">Page12</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="cwidth">
+        <form id="form1" runat="server">
+            <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+        </form>
+    </div>
+    <footer>
+        <div class="cwidth">
+             My Ultra Awesome Footer Here
+             
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,37 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace finalproject
+{
+    public partial class NewPage : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+          
+        }
+
+        protected void Add_Student(object sender, EventArgs e)
+        {
+            //create connection
+            BLOCKDB db = new BLOCKDB();
+
+            //create a new particular page
+            HTTP__Page new_page = new HTTP__Page();
+            //set that page data
+            new_page.SetTitle(page_title.Text);
+            new_page.SetBody(page_body.Text);
+            new_page.SetDate(DateTime.Now);
+
+            //add the page to the database
+            //make this
+            //db.AddPage(new_page);
+
+
+            Response.Redirect("ListPages.aspx");
+        }
+    }
+}
