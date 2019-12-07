@@ -40,7 +40,7 @@ namespace finalproject
                 //start table row
                 search_results.InnerHtml += "<div class=\"table-row\">";
 
-                string pageID = row["pageid"];
+                string pageid = row["pageid"];
 
                 //table cells
                 string pagetitle = row["pagetitle"];
@@ -56,8 +56,8 @@ namespace finalproject
                 search_results.InnerHtml += "<div class=\"table-cell\">";
                 //links to be styled as buttons
               
-                search_results.InnerHtml += "<div class=\"button\"><a href=\"UpdatePage.aspx?studentid=" + pageID + "\">Update</a></div>";
-                search_results.InnerHtml += "<div class=\"button\"><a href=\"deletepage.aspx?studentid=" + pageID + "\">Delete</a></div>";
+                search_results.InnerHtml += "<div class=\"button\"><a href=\"UpdatePage.aspx?studentid=" + pageid + "\">Update</a></div>";
+                search_results.InnerHtml += "<div class=\"button\"><a href=\"deletepage.aspx?studentid=" + pageid + "\">Delete</a></div>";
                 //close table cell
                 search_results.InnerHtml += "</div>";
 

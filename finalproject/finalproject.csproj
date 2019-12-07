@@ -130,6 +130,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="deletePage.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -144,6 +145,7 @@
     <Content Include="Layout.Master" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="ListPages.aspx" />
+    <Content Include="Navigation.ascx" />
     <Content Include="NewPage.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -207,6 +209,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="deletePage.aspx.cs">
+      <DependentUpon>deletePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="deletePage.aspx.designer.cs">
+      <DependentUpon>deletePage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -224,6 +233,13 @@
     </Compile>
     <Compile Include="ListPages.aspx.designer.cs">
       <DependentUpon>ListPages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation.ascx.cs">
+      <DependentUpon>Navigation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Navigation.ascx.designer.cs">
+      <DependentUpon>Navigation.ascx</DependentUpon>
     </Compile>
     <Compile Include="NewPage.aspx.cs">
       <DependentUpon>NewPage.aspx</DependentUpon>
@@ -271,6 +287,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="sql data\" />
+    <Folder Include="wireframes\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

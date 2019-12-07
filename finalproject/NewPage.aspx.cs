@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Diagnostics;
 
 namespace finalproject
 {
@@ -14,8 +15,13 @@ namespace finalproject
           
         }
 
-        protected void Add_Student(object sender, EventArgs e)
+        protected void Add_Page(object sender, EventArgs e)
         {
+
+            //I am doubting that I am reaching this method
+            Debug.WriteLine("I have reached the Add_Page Method");
+
+
             //create connection
             BLOCKDB db = new BLOCKDB();
 
@@ -28,7 +34,7 @@ namespace finalproject
 
             //add the page to the database
             //make this
-            //db.AddPage(new_page);
+            db.AddPage(new_page);
 
 
             Response.Redirect("ListPages.aspx");

@@ -8,7 +8,7 @@
         
         <div class="formrow">
            <label>Pagetitle:</label>
-           <asp:TextBox runat="server" ID="TextBox1"></asp:TextBox>
+           <asp:TextBox runat="server" ID="page_title1"></asp:TextBox>
            <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Please enter your page title" ControlToValidate="page_title"></asp:RequiredFieldValidator>
         </div>
         <div class="formrow">
@@ -16,7 +16,7 @@
            <asp:TextBox runat="server" ID="page_body"></asp:TextBox>
            <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Please enter your page body" ControlToValidate="page_body"></asp:RequiredFieldValidator>
         </div>
-        
+        <%--  --%>
 
         <asp:Button Text="Update Page" OnClick="Update_Page" runat="server" />
     </div>

@@ -31,13 +31,13 @@ namespace finalproject {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl page_title;
         
         /// <summary>
-        /// TextBox1 control.
+        /// page_title1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox page_title1;
         
         /// <summary>
         /// page_body control.

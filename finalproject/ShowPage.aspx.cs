@@ -24,9 +24,9 @@ namespace finalproject
 
                 if (page_record.Count > 0)
                 {
-                    page_title.InnerHtml = page_record["PAGETITLE"];
-                    page_body.InnerHtml = page_record["PAGEBODY"];
-                    page_date.InnerHtml = page_record["PAGEDATE"];
+                    page_title.InnerHtml = page_record["pagetitle"];
+                    page_body.InnerHtml = page_record["pagebody"];
+                    page_date.InnerHtml = page_record["pagedate"];
                 }
                 else
                 {
