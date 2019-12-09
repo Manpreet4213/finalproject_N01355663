@@ -16,7 +16,7 @@
            <asp:TextBox runat="server" ID="page_body"></asp:TextBox>
            <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Please enter your page body" ControlToValidate="page_body"></asp:RequiredFieldValidator>
         </div>
-        <%-- In the codebehind, due to pagedate i was getting error.i.e.why deleted for a while to correct my page.But, the error that is coming
+        <%-- In the codebehind, due to pagedate i was getting error.i.e.why deleted for a while to correct my page.But, the other error that is coming
             i am unable to understand that.I tried a lot.--%>
 
         <asp:Button Text="Update Page" OnClick="Update_Page" runat="server" />
