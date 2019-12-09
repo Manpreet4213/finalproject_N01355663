@@ -6,7 +6,7 @@
         <asp:label for="page_search" runat="server">Search:</asp:label>
         <asp:TextBox ID="page_search" runat="server"></asp:TextBox>
         <asp:Button runat="server" text="submit"/>
-        <div id="debug" runat="server"></div> <!-- show queries for debugging -->
+        <!--<div id="debug" runat="server"></div> show queries for debugging  -->
     </div>
     <% 
     //in order to search for pages, search bar is created.  

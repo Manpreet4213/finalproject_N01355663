@@ -11,9 +11,7 @@ namespace finalproject
     {
         protected void Page_Load(object sender, EventArgs e)
         { 
-            //We only want to show the data when
-            //the user visits the page for the first time
-            //make sure to 
+            // for update the link is provided on the list pages page.
             if (!Page.IsPostBack)
             {
                 //this connection instance is for showing data
@@ -22,7 +20,7 @@ namespace finalproject
             }
         }
 
-        protected void Update_Student(object sender, EventArgs e)
+        protected void Update_Page(object sender, EventArgs e)
         {
 
             //this connection instance is for editing data
@@ -34,12 +32,12 @@ namespace finalproject
             if (valid)
             {
                 HTTP__Page new_page = new HTTP__Page();
-                //set that student data
+                //set that page data
                 new_page.SetTitle(page_title1.Text);
                 new_page.SetBody(page_body.Text);
                 
 
-                //add the student to the database
+                //add the page to the database
                 try
                 {
                     db.UpdatePage(Int32.Parse(pageid), new_page);

@@ -18,7 +18,7 @@ namespace finalproject
 
         protected void NAVIGATION(BLOCKDB db)
         {
-            //query the most popular classes (most students)
+            //query to show pagetitle in the hedaer nav
             string query = "Select pagetitle, pageid from pages";
             List<Dictionary<String, String>> rs = db.List_Query(query);
 

@@ -17,7 +17,7 @@ namespace finalproject
         // - A username
         // - A password
         // - A database
-        //we are to open the PHP MYADMIN to know all this.There one chart will be given to know this.
+        //we are to open the PHP MYADMIN to know all this.There one chart will be given, to know this.
         
         
         private static string User { get { return "root"; } }
@@ -40,7 +40,7 @@ namespace finalproject
         }
 
         //returns a result set
-       //these are the list of dictionaries and present us the result set thaat we want to see.
+       //these are the list of dictionaries and present us the result set that we want to see.
         public List<Dictionary<String, String>> List_Query(string query)
         {
             MySqlConnection Connect = new MySqlConnection(ConnectionString);
@@ -48,7 +48,7 @@ namespace finalproject
             //here , according to our string query, the result set will be provided.
             List<Dictionary<String, String>> ResultSet = new List<Dictionary<String, String>>();
 
-            // try{} catch{} tries to do thingx inside try but when error occurs then the catch part 
+            // try{} catch{} tries to do things inside try but when error occurs then the catch part 
             //works and it prevents the crashing of the system.
             try
             {
@@ -124,7 +124,7 @@ namespace finalproject
                     //for the single data will be stored.
                     Dictionary<String, String> Page = new Dictionary<String, String>();
 
-                    //Look at each column in the result set row, add both the column name and the column value to our Student dictionary
+                    //Look at each column in the result set row, add both the column name and the column value to our Page dictionary
                     for (int i = 0; i < resultset.FieldCount; i++)
                     {
                         Debug.WriteLine("Attempting to transfer data of " + resultset.GetName(i));
@@ -183,7 +183,7 @@ namespace finalproject
         }
 
 
-        //; updatepage method
+        // updatepage method
         public void UpdatePage(int pageid, HTTP__Page new_page)
         {
          //it is better way of updating data.

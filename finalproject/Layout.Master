@@ -14,7 +14,9 @@
                 
                     
         <asp:Navigation runat="server"></asp:Navigation>
-            
+         <%
+            //For making the header nav, i have used plugin navigation.ascx page and i have used a rendering loop.
+         %>  
          
                 
             
@@ -28,7 +30,7 @@
     </div>
     <footer>
         <div class="cwidth">
-             My Ultra Awesome Footer Here
+            ManagePages@yahoo.com
              
         </div>
     </footer>

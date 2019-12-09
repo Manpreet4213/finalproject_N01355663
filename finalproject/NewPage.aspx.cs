@@ -33,7 +33,7 @@ namespace finalproject
             new_page.SetDate(DateTime.Now);
 
             //add the page to the database
-            //make this
+            //make this page to rerect to list page.
             db.AddPage(new_page);
 
 

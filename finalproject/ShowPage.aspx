@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="ShowPage.aspx.cs" Inherits="finalproject.ShowPage" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="body" runat="server">
+<asp:Content ID="page_view" ContentPlaceHolderID="body" runat="server">
     <div class="viewnav">
         <a class="left" href="ListPages.aspx">Back To List</a>
     </div>

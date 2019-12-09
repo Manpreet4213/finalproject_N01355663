@@ -11,6 +11,8 @@
         <asp:TextBox runat="server" ID="page_body"></asp:TextBox>
         <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Please enter your page body" ControlToValidate="page_body"></asp:RequiredFieldValidator>
     </div>
+    <!-- we have not included here the page date as the system will take the date on its own when the page
+          will be entered to the system.-->
     <asp:Button OnClick="Add_Page" Text="Add Page" runat="server" />
     
 </asp:Content>
