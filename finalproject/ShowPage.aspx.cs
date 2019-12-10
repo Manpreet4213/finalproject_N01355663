@@ -16,6 +16,8 @@ namespace finalproject
             string pageid = Request.QueryString["pageid"];
             if (String.IsNullOrEmpty(pageid)) valid = false;
 
+            
+
             //We will attempt to get the record we need
             if (valid)
             {
